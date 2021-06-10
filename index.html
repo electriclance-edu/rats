@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>rrats</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <div class="rainbow">
-      <div class="centered">
-        <h1>ratquest</h1>
-        <p>this is the final version of the website</p>
-      </div>
-    </div>
-  </body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RatQuest</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body onload="games()">
+        <div class="bar">
+            <div onclick="games()" id="gamesBar">GAMES</div>
+            <div onclick="news()" id="newsBar">NEWS</div>
+        </div>
+        <div id="games">
+            <div class="card">text</div>
+            <div class="card">text</div>
+            <div class="card">text</div>
+            <div class="card">text</div>
+            <div class="card">text</div>
+            <div class="card">text</div>
+        </div>
+        <div id="news">
+            <div>
+                <div class="newsHead">
+                    JUNE 9 2021
+                </div>
+                <div class="newsHead">
+                    RatQuest Rises Again!
+                </div>
+                <div class="newsBody">
+                    Greetings, humans! You are now partaking in the glorious game of RatQuest!
+                </div>
+            </div>
+        </div>
+        <script>
+            function games() {
+                document.getElementById("games").style.display = "flex";
+                document.getElementById("news").style.display = "none";
+            }
+            function news() {
+                document.getElementById("games").style.display = "none";
+                document.getElementById("news").style.display = "block"; 
+            }
+        </script>
+    </body>
 </html>
