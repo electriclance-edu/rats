@@ -1,46 +1,76 @@
-body {
-  height:100vh;
-  width:100vw;
-  margin:0;
-  overflow:hidden;
-}
-.centered {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  font-family:"Comic Sans MS";
-}
-h1 {
-  margin:0;
-  font-size:20vw;
-  color:  red;
-  text-shadow:1vw 1vw orange, 2vw 2vw yellow, 2.75vw 2.75vw green, 3.1vw 3.1vw blue, 3.35vw 3.35vw indigo;
-}
-p {
-  font-size:3vw;
-  margin:2vw;
-}
-/*copied from: https://codepen.io/nohoid/pen/kIfto*/
-.rainbow {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
-  background-size:1000% 1000%;
-  background-image: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  animation:rainbow 10s linear infinite;
+* {
+    box-sizing: border-box;
 }
-@keyframes rainbow {
-    0% {
-      background-position:0% 82%
-    }
-    50% {
-      background-position:100% 19%
-    }
-    100% {
-      background-position:0% 82%
-    }
+html {
+    background-color: grey;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+.bar, #games {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+.bar div {
+    color: white;
+    border: 5px solid #180030;
+    border-radius: 15px;
+    background-color: #180030;
+    margin: 0 8px;
+    padding: 0 10px;
+    font-family: 'Patua One', serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.bar div:hover {
+    color: black;
+    border: 5px solid white;
+    background: white;
+    transition: border 0.5s, background 0.5s;
+}
+.card {
+    width: 290px;
+    height: 384px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 7.5px;
+    padding: 10px 16px;
+    background-image: url(../images/PLACEHOLDER.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -10px 10px #180030;
+}
+#news {
+    width: 70%;
+    margin: auto;
+}
+#news > div {
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 7.5px;
+    padding: 10px;
+}
+.newsHead {
+    display: inline;
+    color: white;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: black;
+    margin-right: 10px;
+    padding: 0 10px;
+    font-family: 'Patua One', serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.newsBody {
+    margin-top: 10px;
 }
