@@ -43,7 +43,7 @@ html::-webkit-scrollbar {
     border-radius: 10px;
     margin: 7.5px;
     padding: 10px 16px;
-    background-image: url(../images/PLACEHOLDER.png);
+    background-image: url(images/PLACEHOLDER.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
