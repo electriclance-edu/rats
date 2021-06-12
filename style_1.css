@@ -28,7 +28,6 @@ html::-webkit-scrollbar {
     padding: 0 10px;
     font-family: 'Patua One', serif;
     font-size: 16px;
-    line-height: 20px;
 }
 .bar div:hover, button:hover {
     color: black;
@@ -45,6 +44,7 @@ html::-webkit-scrollbar {
     border-radius: 10px;
     margin: 7.5px;
     padding: 10px;
+    font-size: 16px;
 }
 .newsHead {
     display: inline;
@@ -55,11 +55,10 @@ html::-webkit-scrollbar {
     margin-right: 10px;
     padding: 0 10px;
     font-family: 'Patua One', serif;
-    font-size: 16px;
-    line-height: 20px;
 }
 .newsBody {
     margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
 }
 #games > div {
     color: white;
