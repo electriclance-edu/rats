@@ -1,0 +1,39 @@
+.title {
+    font-size: 30px;
+    font-weight: 700; 
+    text-shadow: 
+        3px 3px black,
+        3px -3px black,
+        -3px 3px black,
+        -3px -3px black,
+        3px 0px black,
+        0px -3px black,
+        -3px 0px black,
+        0px 3px black,
+        3px 2px black,
+        3px -2px black,
+        -3px 2px black,
+        -3px -2px black,
+        -2px -3px black,
+        -2px 3px black,
+        2px -3px black,
+        2px 3px black;
+}
+#card1 {
+    background-image: url(images/1.png)
+}
+#card1 > div {
+    text-align: center;
+    line-height: 16px;
+}
+#card1 button {
+    color: #bc7484;
+    margin: 70px 0 0 88px;
+    border-color: #995161;
+    background-color: #995161;
+}
+#card1 button:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+}
