@@ -1,5 +1,4 @@
 .title {
-    font-size: 30px;
     font-weight: 700; 
     text-shadow: 
         3px 3px black,
@@ -20,15 +19,12 @@
         2px 3px black;
 }
 #card1 {
-    background-image: url(images/1.png)
-}
-#card1 > div {
-    text-align: center;
-    line-height: 16px;
+    padding-top: 16px;
+    background-image: url(images/1_1.png);
 }
 #card1 button {
     color: #bc7484;
-    margin: 70px 0 0 88px;
+    margin: 70px 0 0 104px;
     border-color: #995161;
     background-color: #995161;
 }
@@ -36,4 +32,16 @@
     color: black;
     border-color: white;
     background-color: white;
+}
+#card2 {
+    padding-top: 20px;
+    background-image: url(images/1_2.png);
+}
+#card3 {
+    padding-top: 12px;
+    background-image: url(images/PLACEHOLDER.png);
+}
+#card4 {
+    padding-top: 18px;
+    background-image: url(images/PLACEHOLDER.png);
 }
