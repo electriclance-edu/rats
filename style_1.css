@@ -60,20 +60,20 @@ html::-webkit-scrollbar {
     margin-top: 10px;
     font-family: 'JetBrains Mono', monospace;
 }
-#games > div {
+.card {
     color: white;
     width: 290px;
     height: 384px;
     border: 5px solid black;
     border-radius: 10px;
     margin: 7.5px;
-    padding: 28px 16px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-shadow: -10px 10px #180030;
+    text-align: center;
 }
 button {
     color: white;
